@@ -89,7 +89,7 @@ function CemberinAlani(r, pi) {
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let ucetambolunenler,
+let ucetambolunenler = [],
   enkucuk,
   enbuyuk,
   ucebolunenlerintoplami,
@@ -110,7 +110,11 @@ for(let num in sayilar){
 
 // 3b çözümü:
 
-/* kodlar buraya */
+sayilar.forEach((num) => {
+  if(num % 3 === 0){
+    ucetambolunenler.push(num);
+  }
+});
 
 // 3c çözümü:
 
