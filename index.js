@@ -99,7 +99,14 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+for(let num in sayilar){
+  if(enkucuk === undefined || sayilar[num] < enkucuk){
+    enkucuk = sayilar[num];
+  }
+  if(enbuyuk === undefined || sayilar[num] > enbuyuk){
+    enbuyuk = sayilar[num];
+  }
+}
 
 // 3b çözümü:
 
