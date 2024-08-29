@@ -95,7 +95,7 @@ let ucetambolunenler = [],
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar =[],
   siralisayilar,
-  tekraredensayilar;
+  tekraredensayilar = [];
 
 // 3a çözümü
 
@@ -134,7 +134,21 @@ siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
 
 // 3f çözümü
 
-/* kodlar buraya */
+const sayilarCount = {};
+
+for (const sayi of sayilar) {
+    if (sayilarCount[sayi]) {
+        sayilarCount[sayi]++;
+    } else {
+        sayilarCount[sayi] = 1;
+    }
+}
+
+for (const sayi in sayilarCount) {
+    if (sayilarCount[sayi] > 1) {
+        tekraredensayilar.push(`${sayi} sayısı ${sayilarCount[sayi]} kere tekrar edilmiştir`);
+    }
+}
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
