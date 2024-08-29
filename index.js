@@ -118,7 +118,7 @@ sayilar.forEach((num) => {
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((acc, num) => acc + num);
 
 // 3d çözümü
 
