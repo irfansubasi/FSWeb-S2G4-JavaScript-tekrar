@@ -93,7 +93,7 @@ let ucetambolunenler = [],
   enkucuk,
   enbuyuk,
   ucebolunenlerintoplami,
-  besyuzdenkucuksayilar,
+  besyuzdenkucuksayilar =[],
   siralisayilar,
   tekraredensayilar;
 
@@ -122,7 +122,11 @@ ucebolunenlerintoplami = ucetambolunenler.reduce((acc, num) => acc + num);
 
 // 3d çözümü
 
-/* kodlar buraya */
+sayilar.filter((num) => {
+  if(num < 500){
+    besyuzdenkucuksayilar.push(num);
+  }
+});
 
 // 3e çözümü
 
